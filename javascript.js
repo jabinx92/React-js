@@ -52,16 +52,19 @@ printer('johnny', 28, 'Danville', 'M', 'Software Engineer' );
 //Javascript modules
     //split up your code into separate components, therefore easier to maintain and organize
 
-const person = {
-    name: 'max'
-}
+    //default keyword - when you import, 'import prs from './utility.js' is same as 'import person from './utility.js
+    //default export
+        // import person from './person.js'
+            //is the same as
+        // import prs from './person.js'
 
-export default person
 
-// export const clean = () => {...}
 
-export const baseData = 10;
+import {double as doubleTheNumber} from 'utility.js'; //as changes name of function imported to doubleTheNumber
 
-import {double} from './utils.js';
+import * as bundled from './utility.js' // '*' if you have multiple functions and assigned variables.
 
-console.log(double(5))
+console.log(doubleTheNumber(5));
+
+//===============================================================================
+//CLASSES
