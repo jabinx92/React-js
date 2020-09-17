@@ -281,3 +281,20 @@ import * as upToYou from './path/to/file.js';
 
 upToYou is - well- up to you and simply bundles all exported variables./functions in one javascript object. for example, if you export const someData = ...(/path/to/file.js) you can access it on upToYou like this: upToYou.someData.
 */
+
+//==============================================================================
+/*
+Using a building workflow
+    -recommended for single page and multi page applications
+    why? to optimize code, we want to ship code as small and optimized as possible
+    we want to use these next-gen javascript features(arrow functions, spread operator,methods,array functions, best pracice)
+        -to write less error prone code(ES6)
+        -so we can be more productive and get more done in less code and quicker time
+    how? use dependency management tool npm(node package manager) or yarn - react, react dom
+    use bundler - webpack - all this code gets bundled so we can ship it
+    use compiler(nex gen javascript) - babel
+    use a development web server
+*/
+
+
+//test
